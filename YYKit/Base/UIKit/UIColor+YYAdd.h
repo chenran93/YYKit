@@ -218,14 +218,14 @@ extern void YY_HSL2HSB(CGFloat h, CGFloat s, CGFloat l,
  Returns the rgb value in hex.
  @return hex value of RGB,such as 0x66ccff.
  */
-- (uint32_t)rgbValue;
+- (uint32_t)yy_rgbValue;
 
 /**
  Returns the rgba value in hex.
  
  @return hex value of RGBA,such as 0x66ccffff.
  */
-- (uint32_t)rgbaValue;
+- (uint32_t)yy_rgbaValue;
 
 /**
  Returns the color's RGB value as a hex string (lowercase).
@@ -235,7 +235,7 @@ extern void YY_HSL2HSB(CGFloat h, CGFloat s, CGFloat l,
  
  @return The color's value as a hex string.
  */
-- (nullable NSString *)hexString;
+- (nullable NSString *)yy_hexString;
 
 /**
  Returns the color's RGBA value as a hex string (lowercase).
@@ -245,7 +245,7 @@ extern void YY_HSL2HSB(CGFloat h, CGFloat s, CGFloat l,
  
  @return The color's value as a hex string.
  */
-- (nullable NSString *)hexStringWithAlpha;
+- (nullable NSString *)yy_hexStringWithAlpha;
 
 
 #pragma mark - Retrieving Color Information
@@ -305,53 +305,53 @@ extern void YY_HSL2HSB(CGFloat h, CGFloat s, CGFloat l,
  The color's red component value in RGB color space.
  The value of this property is a float in the range `0.0` to `1.0`.
  */
-@property (nonatomic, readonly) CGFloat red;
+@property (nonatomic, readonly) CGFloat yy_red;
 
 /**
  The color's green component value in RGB color space.
  The value of this property is a float in the range `0.0` to `1.0`.
  */
-@property (nonatomic, readonly) CGFloat green;
+@property (nonatomic, readonly) CGFloat yy_green;
 
 /**
  The color's blue component value in RGB color space.
  The value of this property is a float in the range `0.0` to `1.0`.
  */
-@property (nonatomic, readonly) CGFloat blue;
+@property (nonatomic, readonly) CGFloat yy_blue;
 
 /**
  The color's hue component value in HSB color space.
  The value of this property is a float in the range `0.0` to `1.0`.
  */
-@property (nonatomic, readonly) CGFloat hue;
+@property (nonatomic, readonly) CGFloat yy_hue;
 
 /**
  The color's saturation component value in HSB color space.
  The value of this property is a float in the range `0.0` to `1.0`.
  */
-@property (nonatomic, readonly) CGFloat saturation;
+@property (nonatomic, readonly) CGFloat yy_saturation;
 
 /**
  The color's brightness component value in HSB color space.
  The value of this property is a float in the range `0.0` to `1.0`.
  */
-@property (nonatomic, readonly) CGFloat brightness;
+@property (nonatomic, readonly) CGFloat yy_brightness;
 
 /**
  The color's alpha component value.
  The value of this property is a float in the range `0.0` to `1.0`.
  */
-@property (nonatomic, readonly) CGFloat alpha;
+@property (nonatomic, readonly) CGFloat yy_alpha;
 
 /**
  The color's colorspace model.
  */
-@property (nonatomic, readonly) CGColorSpaceModel colorSpaceModel;
+@property (nonatomic, readonly) CGColorSpaceModel yy_colorSpaceModel;
 
 /**
  Readable colorspace string.
  */
-@property (nullable, nonatomic, readonly) NSString *colorSpaceString;
+@property (nullable, nonatomic, readonly) NSString *yy_colorSpaceString;
 
 @end
 
