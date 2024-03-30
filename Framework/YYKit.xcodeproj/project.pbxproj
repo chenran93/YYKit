@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 49;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99564B162BB7BA68004C8577 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 99564B152BB7BA68004C8577 /* PrivacyInfo.xcprivacy */; };
 		D9B2616A1BEF52730038C00A /* NSArray+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B260BC1BEF52730038C00A /* NSArray+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D9B2616B1BEF52730038C00A /* NSArray+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B260BD1BEF52730038C00A /* NSArray+YYAdd.m */; };
 		D9B2616C1BEF52730038C00A /* NSBundle+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B260BE1BEF52730038C00A /* NSBundle+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -187,6 +188,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		99564B152BB7BA68004C8577 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		D9B260AB1BEF51350038C00A /* YYKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9B260B71BEF51A90038C00A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9B260BC1BEF52730038C00A /* NSArray+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+YYAdd.h"; sourceTree = "<group>"; };
@@ -433,6 +435,7 @@
 		D9B260B91BEF52730038C00A /* YYKit */ = {
 			isa = PBXGroup;
 			children = (
+				99564B152BB7BA68004C8577 /* PrivacyInfo.xcprivacy */,
 				D9B261691BEF52730038C00A /* YYKit.h */,
 				D9B260BA1BEF52730038C00A /* Base */,
 				D9B261201BEF52730038C00A /* Model */,
@@ -848,6 +851,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99564B162BB7BA68004C8577 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
