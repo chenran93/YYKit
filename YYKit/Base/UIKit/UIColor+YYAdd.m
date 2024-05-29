@@ -240,7 +240,7 @@ void YY_HSL2HSB(CGFloat h, CGFloat s, CGFloat l,
                            alpha:alpha];
 }
 
-- (uint32_t)rgbValue {
+- (uint32_t)yy_rgbValue {
     CGFloat r = 0, g = 0, b = 0, a = 0;
     [self getRed:&r green:&g blue:&b alpha:&a];
     int8_t red = r * 255;
@@ -249,7 +249,7 @@ void YY_HSL2HSB(CGFloat h, CGFloat s, CGFloat l,
     return (red << 16) + (green << 8) + blue;
 }
 
-- (uint32_t)rgbaValue {
+- (uint32_t)yy_rgbaValue {
     CGFloat r = 0, g = 0, b = 0, a = 0;
     [self getRed:&r green:&g blue:&b alpha:&a];
     int8_t red = r * 255;
@@ -305,11 +305,11 @@ static BOOL hexStrToRGBA(NSString *str,
     return nil;
 }
 
-- (NSString *)hexString {
+- (NSString *)yy_hexString {
     return [self hexStringWithAlpha:NO];
 }
 
-- (NSString *)hexStringWithAlpha {
+- (NSString *)yy_hexStringWithAlpha {
     return [self hexStringWithAlpha:YES];
 }
 
@@ -331,7 +331,7 @@ static BOOL hexStrToRGBA(NSString *str,
     
     if (hex && withAlpha) {
         hex = [hex stringByAppendingFormat:@"%02lx",
-               (unsigned long)(self.alpha * 255.0 + 0.5)];
+               (unsigned long)(self.yy_alpha * 255.0 + 0.5)];
     }
     return hex;
 }
@@ -395,51 +395,51 @@ static BOOL hexStrToRGBA(NSString *str,
     return YES;
 }
 
-- (CGFloat)red {
+- (CGFloat)yy_red {
     CGFloat r = 0, g, b, a;
     [self getRed:&r green:&g blue:&b alpha:&a];
     return r;
 }
 
-- (CGFloat)green {
+- (CGFloat)yy_green {
     CGFloat r, g = 0, b, a;
     [self getRed:&r green:&g blue:&b alpha:&a];
     return g;
 }
 
-- (CGFloat)blue {
+- (CGFloat)yy_blue {
     CGFloat r, g, b = 0, a;
     [self getRed:&r green:&g blue:&b alpha:&a];
     return b;
 }
 
-- (CGFloat)alpha {
+- (CGFloat)yy_alpha {
     return CGColorGetAlpha(self.CGColor);
 }
 
-- (CGFloat)hue {
+- (CGFloat)yy_hue {
     CGFloat h = 0, s, b, a;
     [self getHue:&h saturation:&s brightness:&b alpha:&a];
     return h;
 }
 
-- (CGFloat)saturation {
+- (CGFloat)yy_saturation {
     CGFloat h, s = 0, b, a;
     [self getHue:&h saturation:&s brightness:&b alpha:&a];
     return s;
 }
 
-- (CGFloat)brightness {
+- (CGFloat)yy_brightness {
     CGFloat h, s, b = 0, a;
     [self getHue:&h saturation:&s brightness:&b alpha:&a];
     return b;
 }
 
-- (CGColorSpaceModel)colorSpaceModel {
+- (CGColorSpaceModel)yy_colorSpaceModel {
     return CGColorSpaceGetModel(CGColorGetColorSpace(self.CGColor));
 }
 
-- (NSString *)colorSpaceString {
+- (NSString *)yy_colorSpaceString {
     CGColorSpaceModel model =  CGColorSpaceGetModel(CGColorGetColorSpace(self.CGColor));
     switch (model) {
         case kCGColorSpaceModelUnknown:
