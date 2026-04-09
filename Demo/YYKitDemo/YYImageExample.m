@@ -9,7 +9,7 @@
 #import "YYImageExample.h"
 #import "YYKit.h"
 #import <ImageIO/ImageIO.h>
-#import <WebP/demux.h>
+//#import <WebP/demux.h>
 
 @interface YYImageExample()
 @property (nonatomic, strong) NSMutableArray *titles;
